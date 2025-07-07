@@ -39,7 +39,7 @@ Method 2: Using `kubectl create` Command**
 1. Create a ReplicaSet using the command line:
 
     ```bash
-    kubectl create rs rs-web --image=nginx --replicas=3 --dry-run=client -o yaml > rs-web.yaml
+    kubectl create deploy rs-web --image=nginx --replicas=3 --dry-run=client -o yaml > rs-web.yaml
     kubectl apply -f rs-web.yaml
     kubectl get rs
     kubectl get pods
